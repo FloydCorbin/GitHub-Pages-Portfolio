@@ -1,0 +1,79 @@
+html{
+    box-sizing: content-box;
+}
+
+body {
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    position: relative;
+    padding: 0px 10px 50px 10px;
+    margin: auto;
+    height: 120px;
+
+}
+
+img {
+    border-radius: 20px;
+    display: block;
+    max-width: 100px;
+    padding: 5px;
+    float: left;
+    border-radius: 50%;
+}
+
+nav {
+    position: relative;
+    left: 15%;
+    bottom: 30px;
+}
+
+li {
+    position: relative;
+    padding-left: 13%;
+    display: inline;
+}
+
+body {
+    min-height: 200px;
+}
+
+section {
+    height: 100vh;
+}
+
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5rem;
+}
+
+.page-title {
+    position: relative;
+    top: 115px;
+    left: -105px;
+
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+h2 h3 h4 {
+    position: relative;
+    padding: 5px, 20px, 5px, 10px;
+}
+footer {
+    min-height: 120px;
+    position: relative;
+}
+
+.copywright {
+    position: relative;
+    bottom: 10px;
+    margin: auto;
+}
+
