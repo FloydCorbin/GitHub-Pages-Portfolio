@@ -20,9 +20,9 @@ body {
     position: relative;
 }
 
-img {
+.profile-image {
     display: block;
-    max-width: 100px;
+    max-width: 120px;
     padding: 5px;
     float: left;
     border-radius: 50%;
@@ -30,6 +30,7 @@ img {
 
 nav {
     position: relative;
+    margin-left: 5rem;
 }
 
 li {
@@ -59,7 +60,9 @@ p {
     position: relative;
     top: 115px;
     left: -105px;
-
+    max-width: 120px;
+    padding: 1px;
+    margin: auto;
 }
 
 h1 {
