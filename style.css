@@ -35,11 +35,11 @@ nav {
     
 }
 
-li {
-    position: relative;
-    padding-left: 13%;
-    display: inline;
+ul.nav {
+    display: flex;
+    justify-content: space-between;
 }
+
 
 body {
     position: relative;
