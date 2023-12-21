@@ -91,3 +91,25 @@ footer {
     margin: 50%;
 }
 
+/* carousel  */
+.carousel {
+    position: relative;
+  }
+
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .carousel-item.active {
+    display: block;
+  }

@@ -5,3 +5,19 @@
             $('#logo').fadeOut();
         }
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var carousel = new bootstrap.Carousel(document.getElementById('myCarousel'));
+
+        // Ensure focus management for keyboard navigation
+        document.getElementById('myCarousel').addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+                carousel.pause();
+            }
+        });
+
+        // Reset focus when transitioning between slides
+        document.getElementById('myCarousel').addEventListener('slide.bs.carousel', function () {
+            carousel.cycle();
+        });
+    });
