@@ -2,10 +2,25 @@ html {
     box-sizing: content-box;
 }
 
+/* Hide scrollbar for Chrome, Safari (didn't work) and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
 body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.main-content {
     max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
+}
+
+.full-width {
+    width: 100vw;
 }
 
 .header {
@@ -99,8 +114,8 @@ footer {
 
 .copywright {
     position: relative;
-    bottom: 10px;
-    margin: 50%;
+    /* bottom: 10px; */
+    margin: auto;
 }
 
 
@@ -169,5 +184,9 @@ footer {
 }
 
 .end-section {
-    background-image: "/70215234566__55C7E1C9-7A2B-413E-9DE6-3F19B1CEF042.GIF";
+    background-image: url('/70215234566__55C7E1C9-7A2B-413E-9DE6-3F19B1CEF042.GIF');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
