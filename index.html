@@ -2,11 +2,24 @@
 <html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xU j+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"> </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="mask.png" type="image/x-icon">
-  
+
+    <script src="logic.js"></script>
+    <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+
 
 
     <meta charset="UTF-8">
@@ -24,10 +37,9 @@
     </div>
     <nav id="highlighting_nav" class="navbar sticky-top navbar-light bg-light px-3">
 
-
         <ul class="nav nav-pills">
             <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#skills_interests">Skills/Interests</a>
@@ -67,62 +79,80 @@
             <p>Floyd is a certified Scrum Master and has experience with Agile methodologies. He is also a certified
                 Sitecore 9 Developer and has experience with Sitecore 9. Floyd is also a certified AEMaaCS Practioner
                 and has experience with AEMaaCS Sites and Assets. Additionaly skills include:</p>
-            
-            
+
+            <div class="skills-container">
+                <div class="q">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>Bootstrap</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <div class="r">
+                    <ul>
+                        <li>MySQL</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Visual Studio Code</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe XD</li>
+                    </ul>
+                </div>
+                <div class="s">
+                    <ul>
+                        <li>Microsoft Office</li>
+                        <li>Microsoft Visio</li>
+                        <li>Microsoft SharePoint</li>
+                        <li>Microsoft Teams</li>
+                        <li>Microsoft OneDrive</li>
+                        <li>Microsoft OneNote</li>
+                    </ul>
+                </div>
+                <div class="t">
+                    <ul>
+                        <li>Microsoft Outlook</li>
+                        <li>Microsoft Word</li>
+                        <li>Microsoft Excel</li>
+                        <li>Microsoft PowerPoint</li>
+                        <li>Microsoft Access</li>
+                        <li>Microsoft Publisher</li>
+                        <li>Microsoft Azure</li>
+                    </ul>
+                </div>
         </section>
         <section>
             <h2 id="portfolio">Portfolio</h2>
             <p>Here are some of the projects Floyd has worked on:</p>
-
-
-            <div id="myCarousel" class="carousel" tabindex="0" role="region" aria-label="Image Carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="ales-nesetril-Im7lZjxeLhg-unsplash.jpg" class="d-block w-100" alt="Image 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" class="d-block w-100" alt="Image 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="clement-helardot-95YRwf6CNw8-unsplash.jpg" class="d-block w-100" alt="Image 3">
-                    </div>
+            <div class="portfolio-container">
+                <div class="quality-assurance">
+                    <h3 class="portfolio-card-title">Quality Assurance</h3>
+                    <img class="portfolio-card" src="/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" alt="">
                 </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="pm-ba">
+                    <h3 class="portfolio-card-title">Project Management / Business Analysis</h3>
+                    <img class="portfolio-card" src="/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" alt="">
+                </div>
+                <div class="web-development">
+                    <h3 class="portfolio-card-title">Development</h3>
+                    <img class="portfolio-card" src="/cookie-the-pom-gySMaocSdqs-unsplash.jpg" alt="">
+                </div>
             </div>
+        </section>
+        <section class="end-section">
 
         </section>
-        <script src="logic.js"></script>
-
-        <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
-
-        <!-- JQuery -->
-        <script src="https://releases.jquery.com/#:~:text=jQuery%20Core%203.7.1%20%2D-,uncompressed,-%2C%20minified%2C">
-        </script>
-
-        
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"> </script>
+    </div>
 
 
-
-        <footer>
-            <span class="copywright">
-                <p>Copywright 2023</p>
-            </span>
-        </footer>
+    <footer>
+        <span class="copywright">
+            <p>Copywright 2023</p>
+        </span>
+    </footer>
 </body>
 
 </html>

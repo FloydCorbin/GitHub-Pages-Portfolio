@@ -1,4 +1,4 @@
-html{
+html {
     box-sizing: content-box;
 }
 
@@ -13,6 +13,8 @@ body {
     padding: 0px 10px 10px 0px;
     margin: auto;
     min-height: 170px;
+    min-width: none;
+    /* 100vw */
 
 }
 
@@ -32,7 +34,7 @@ body {
 
 nav {
     position: relative;
-    
+
 }
 
 ul.nav {
@@ -48,8 +50,8 @@ body {
 
 section {
     height: 100vh;
-    text-overflow: ellipsis;
-    overflow: auto;
+    /* text-overflow: ellipsis; */
+    /* overflow: auto; */
 }
 
 
@@ -76,10 +78,20 @@ h2 h3 h4 {
     padding: 5px, 20px, 5px, 10px;
 }
 
-.section-button{
+.portfolio-card-title {
+    position: relative;
+    bottom: 50%;
+    font-size: 1.25rem;
+    margin: auto;
+    word-wrap: break-word;
+    max-width: fit-content;
+}
+
+.section-button {
     position: relative;
     margin: 0 50%;
 }
+
 footer {
     min-height: 120px;
     position: relative;
@@ -91,25 +103,71 @@ footer {
     margin: 50%;
 }
 
-/* carousel  */
-.carousel {
+
+/*Skills grid */
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "q r s t";
+}
+
+.q {
+    grid-area: q;
+}
+
+.r {
+    grid-area: r;
+}
+
+.s {
+    grid-area: s;
+}
+
+.t {
+    grid-area: t;
+}
+
+/* Portfolio grid */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "quality-assurance quality-assurance quality-assurance pm-ba pm-ba pm-ba web-development web-development web-development";
+}
+
+.quality-assurance {
+    grid-area: quality-assurance;
+    margin: auto;
+}
+
+.pm-ba {
+    grid-area: pm-ba;
+    margin: auto;
+}
+
+.web-development {
+    grid-area: web-development;
+    margin: auto;
+}
+
+.portfolio-card {
     position: relative;
-  }
+    display: inline-flex;
+    max-width: 100vw;
+    height: 33vh;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
 
-  .carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .carousel-item {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  .carousel-item.active {
-    display: block;
-  }
+.end-section {
+    background-image: "/70215234566__55C7E1C9-7A2B-413E-9DE6-3F19B1CEF042.GIF";
+}
