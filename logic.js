@@ -2,5 +2,7 @@
 $(window).scroll(function () {
   if ($(document).scrollTop() > 1) {
     $(".header").fadeOut(900);
+    //move window to scroll position
+    window.scrollTo(0, 0);
   }
 });

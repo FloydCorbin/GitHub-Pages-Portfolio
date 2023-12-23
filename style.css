@@ -1,3 +1,16 @@
+/* Color Theme Swatches in Hex */
+:root {
+    --sky: #EBC942;
+    --light-brown: #B57A33;
+    --golden: #3669C4;
+    --formal-blue: #363B45;
+    --soft-brown: #DED4AD;
+    background-color: 
+        radial-gradient(ellipse at top, #E2DCC2, transparent),
+        radial-gradient(ellipse at bottom, #3669C4, transparent);
+}
+
+
 html {
     box-sizing: content-box;
 }
@@ -9,16 +22,22 @@ body::-webkit-scrollbar {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
-    -ms-overflow-style: none;
     /* IE and Edge */
-    scrollbar-width: none;
+    -ms-overflow-style: none;
     /* Firefox */
+    scrollbar-width: none;
+    position: relative;
+    min-height: 200px;
+    background-color: var(--soft-brown);
+
 }
 
+/* Desktop style */
 .main-content {
     max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
+    background-color: var(--soft-brown);
 }
 
 .full-width {
@@ -31,8 +50,7 @@ body {
     margin: auto;
     min-height: 170px;
     min-width: none;
-    /* 100vw */
-
+    background-color: var(--golden);
 }
 
 .scrollspy {
@@ -50,7 +68,7 @@ body {
 
 nav {
     position: relative;
-
+    background-color: var(--sky);
 }
 
 ul.nav {
@@ -59,18 +77,12 @@ ul.nav {
     justify-content: space-between;
 }
 
-
-body {
-    position: relative;
-    min-height: 200px;
-}
-
 section {
-    height: 100vh;
-    /* text-overflow: ellipsis; */
-    /* overflow: auto; */
+    position: relative;
+    margin: auto;
+    min-height: 100vh;
+    min-width: none;
 }
-
 
 p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -88,36 +100,31 @@ p {
 
 h1 {
     font-size: 1rem;
+    font-weight: bold;
+    color: white;
 }
 
 h2 h3 h4 {
     position: relative;
-    padding: 5px, 20px, 5px, 10px;
+    padding: 20px, 20px, 5px, 10px;
 }
 
 .portfolio-card-title {
-    display: inline-block;
     color: rgb(255, 255, 255);
     position: relative;
-    bottom: 90px !important; 
+    bottom: 120px !important;
     font-size: .875rem !important;
     margin: auto;
     word-wrap: break-word;
     text-align: center;
-    box-shadow: 0 0 10px 0 rgb(84, 0, 0);
-}
-
-.section-button {
-    position: relative;
-    margin: 0 50%;
 }
 
 footer {
-    background-image: url('/70215234566__55C7E1C9-7A2B-413E-9DE6-3F19B1CEF042.GIF');
+    /* background-image: url('/70215234566__55C7E1C9-7A2B-413E-9DE6-3F19B1CEF042.GIF');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100vh; */
     position: relative;
 }
 
@@ -182,10 +189,67 @@ footer {
 }
 
 .portfolio-card {
-    position: relative;
-    width: 26vw;
+    /* display: block; */
+    max-width: 26vw;
+    min-width: 300px;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-card:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 1040px) {
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "quality-assurance pm-ba"
+            "web-development web-development";
+    }
+    
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "q r" 
+            "s t";
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "quality-assurance"
+            "pm-ba"
+            "web-development";
+    }
+    
+    /* .skills-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "q" 
+            "r" 
+            "s" 
+            "t";
+    } */
+    
 }
